@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    
+    <title>Inverted Scroll jQuery plugin</title>
+    <meta name="description" content="A simple and easy to use jQuery plugin for an 'inverted scrolling' effect.">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        /* Some colors just for demo pourposes */
+
+        .left {
+            border-right: 1px solid #e0e0e0;
+        }
+
+        .left .row:nth-child(2n+1), 
+        .right .row:nth-child(2n) {
+            background-color: #f5f5f5;
+        }
+
+        .left .row:nth-child(2n), 
+        .right .row:nth-child(2n+1) {
+            background-color: #e3e3e3;
+        }
+    </style>
+</head>
+<body>
+    <div class="left">
+        <section class="row"></section>
+        <section class="row"></section>
+        <section class="row"></section>
+        <section class="row"></section>
+        <section class="row"></section>
+    </div>
+
+    <div class="right">
+        <section class="row"></section>
+        <section class="row"></section>
+        <section class="row"></section>
+        <section class="row"></section>
+        <section class="row"></section>
+    </div>
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="js/jquery-1.10.2.min.js"><\/script>')</script>
+    <script src="js/jquery.inverted-scroll.js"></script>
+    
+    <script>
+        $(document).ready(function(){
+            $('body').invertedScroll();
+        });
+    </script>
+</body>
+</html>
