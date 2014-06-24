@@ -1,7 +1,7 @@
 /*
  *   Inverted Scroll - Version 1.0
  *   Author  : @jorge_maicon
- *   URL     : http://github.com/jorgemaicon/inverted-scroll/
+ *   URL     : http://github.com/jmaicon/inverted-scroll/
  *   License : MIT License / GPL License
  */
 
